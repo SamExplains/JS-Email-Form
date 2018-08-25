@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Concert One', cursive;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.Concert-One{
+  font-family: 'Concert One', cursive;
+}
+
+.Work-Sans-Light{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+.Work-Sans-Regular{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.Work-Sans-Semi-Bold{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.Work-Sans-Black{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+

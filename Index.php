@@ -28,8 +28,6 @@
       </form>
     </div> <!--#content-container-->
 
-    <div class="col-12 container-border"></div>
-
     <!-- Bottom of form container ( 3 buttons) -->
     <div class="col-12 text-center p-4 mx-auto" id="form-bottom-container">
       <div class="row">

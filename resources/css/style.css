@@ -79,11 +79,18 @@ body{
 
 #form-container{
   background-color: rgba(235,235,235,.31);
+  border-top: solid .75rem;
+  border-color: #CA8FFF;
+}
+
+#form-bottom-container{
+  border-top: solid .75rem;
+  border-color: #CA8FFF;
 }
 
 .container-border{
-  height: .75rem;
-  background-color: #CA8FFF;
+  /*height: .75rem;*/
+  /*background-color: #CA8FFF;*/
 }
 
 #content-container{

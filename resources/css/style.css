@@ -120,3 +120,16 @@ textarea{
   resize: none;
   overflow: scroll !important;
 }
+
+input, textarea{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: solid .10rem  rgba(144,19,254,.47) !important;
+}
+
+.form-control:focus{
+  /*border-color: red !important;*/
+  /*box-shadow: none !important;*/
+  outline: 0 none;
+}

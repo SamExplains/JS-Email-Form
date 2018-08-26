@@ -9,9 +9,9 @@ function eventListeners() {
 
   document.addEventListener('DOMContentLoaded', appInit);
 
-  email.addEventListener('blur', validateField);
-  subject.addEventListener('blur', validateField);
-  message.addEventListener('blur', validateField);
+  email.blur(validateField);
+  subject.blur(validateField);
+  message.blur(validateField);
 
   // Checking to make sure button is disabled
   sendButton.click(function () {
@@ -26,5 +26,5 @@ function appInit() {
 }
 
 function validateField() {
-  
+
 }

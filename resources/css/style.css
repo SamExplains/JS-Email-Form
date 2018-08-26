@@ -65,6 +65,10 @@ body{
     margin-bottom: 1.5rem !important;
   }
 
+  #content-container{
+    background-color: rgba(235,235,235,.31);
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -88,9 +92,8 @@ body{
   border-color: #CA8FFF;
 }
 
-.container-border{
-  /*height: .75rem;*/
-  /*background-color: #CA8FFF;*/
+#form-container-row{
+  height: 65vh !important;
 }
 
 #content-container{
@@ -111,4 +114,9 @@ body{
 .form-bottom-button:hover{
   background-color: rgba(144,19,254,.47);
   transition: all .65s;
+}
+
+textarea{
+  resize: none;
+  overflow: scroll !important;
 }

@@ -45,11 +45,11 @@
           <small class="Work-Sans-Semi-Bold">Email Buddy</small>
         </div>
         <!-- Reset Button -->
-        <div class="col-md-4 col-12 form-bottom-button my-auto">
+        <button class="col-md-4 col-12 btn btn-light form-bottom-button my-auto" id="reset-button">
           <img src="resources/img/151956.svg"  width="30" alt="">
           <br>
           <small class="Work-Sans-Light">Reset</small>
-        </div>
+        </button>
       </div>
     </div>
 

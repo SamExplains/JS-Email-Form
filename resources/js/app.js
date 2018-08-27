@@ -1,7 +1,7 @@
 console.log('Script loaded in!');
 
 /* Variables */
-const sendButton = $('#send-button'), email = $('#email'), subject = $('#subject'), message = $('#message');
+const sendButton = $('#send-button'), email = $('#email'), subject = $('#subject'), message = $('#message'), resetButton = $('#reset-button'), emailForm = $('#content-container');
 
 eventListeners();
 
@@ -15,8 +15,18 @@ function eventListeners() {
 
   // Checking to make sure button is disabled
   sendButton.click(function () {
-    console.log("Clicked");
+    console.log("Send Clicked");
   });
+
+  // Reset Button
+  resetButton.click(function () {
+    console.log("Reset Clicked");
+    email.val('');
+    subject.val('');
+    message.val('');
+    sendButton.prop("disabled", true);
+  })
+
 }
 
 function appInit() {
@@ -43,6 +53,23 @@ function validateField() {
       break;
   }
 
+
+  //Checking for errors
+  errors = document.querySelectorAll('.error');
+  console.log(errors);
+  console.error('Total Errors Found ' + errors);
+
+  //Check that all the inputs are not empty
+  if(email.value !== '' && subject.value !== '' && message.value !== ''){
+    if (errors.length === 0){
+      //Re-enable the Send Button
+      sendButton.toggleClass('animated bounce');
+      sendButton.prop("disabled", false);
+    } else {
+      // sendButton.toggleClass('animated bounce');
+      sendButton.prop("disabled", true);
+    }
+  }
 
 }
 

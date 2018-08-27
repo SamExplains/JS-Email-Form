@@ -133,3 +133,22 @@ input, textarea{
   /*box-shadow: none !important;*/
   outline: 0 none;
 }
+
+.valid-input{
+  border-bottom-color: #56B850 !important;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.error{
+  /*border-color: red !important;*/
+  border-bottom: solid .20rem red !important;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}

@@ -1,6 +1,6 @@
 <?php include "resources/includes/header.php" ?>
 
-<div class="container centerer animated fadeIn" id="form-container" style="margin-top: 3rem !important;">
+<div class="container centerer animated fadeIn" id="form-container" >
 
   <div class="row" id="form-container-row">
 
@@ -14,15 +14,15 @@
     <div class="col-12 p-md-5 p-3 m-md-3 m-sm-0" id="content-container">
       <form>
         <div class="form-group">
-          <label for="email">Email address</label>
-          <input  type="email" class="form-control" id="email" placeholder="name@example.com">
+          <label for="email">Email address <small style="color: var(--cabaret)">* Required</small></label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
         </div>
         <div class="form-group">
-          <label for="subject">Subject</label>
+          <label for="subject">Subject  <small style="color: var(--cabaret)">* Required</small></label>
           <input type="text" class="form-control" id="subject" placeholder="A funny witty title">
         </div>
         <div class="form-group">
-          <label for="message">Mesasge</label>
+          <label for="message">Mesasge  <small style="color: var(--cabaret)">* Required</small></label>
           <textarea class="form-control" id="message" placeholder="Maybe how you're day has been going?" rows="3"></textarea>
         </div>
       </form>

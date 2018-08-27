@@ -34,7 +34,7 @@
     <div class="col-12 text-center p-4 mx-auto" id="form-bottom-container">
       <div class="row">
         <!-- Send Button -->
-        <button class="col-md-4 col-12 btn btn-light form-bottom-button my-auto" id="send-button">
+        <button class="col-md-4 col-12 btn btn-light form-bottom-button my-auto" type="submit" id="send-button">
           <img src="resources/img/149063.svg" width="30" alt="">
           <br>
           <small class="Work-Sans-Light">Send</small>
@@ -50,6 +50,12 @@
           <br>
           <small class="Work-Sans-Light">Reset</small>
         </button>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 centerer">
+      <div class="text-center rounded send-animation" style="background-color: rgba(71, 93, 109, .65);" id="gif-container">
+        <img class="animated infinite slideInLeft" src="resources/img/sending.svg" width="80" alt="">
       </div>
     </div>
 

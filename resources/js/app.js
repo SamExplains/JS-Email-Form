@@ -1,7 +1,9 @@
 console.log('Script loaded in!');
 
 /* Variables */
-const sendButton = $('#send-button'), email = $('#email'), subject = $('#subject'), message = $('#message'), resetButton = $('#reset-button'), emailForm = $('#content-container');
+const sendButton = $('#send-button'), email = $('#email'), subject = $('#subject'),
+                   message = $('#message'), resetButton = $('#reset-button'),
+                   emailForm = $('#content-container'), gifContainer = $('#gif-container');
 
 eventListeners();
 
@@ -14,9 +16,11 @@ function eventListeners() {
   message.blur(validateField);
 
   // Checking to make sure button is disabled
-  sendButton.click(function () {
-    console.log("Send Clicked");
+  sendButton.click('submit', function (e) {
+    sendEmail(e);
+    gifContainer.removeClass('send-animation');
   });
+
 
   // Reset Button
   resetButton.click(function () {
@@ -32,6 +36,22 @@ function eventListeners() {
 function appInit() {
   //Disable button when initializing app
   sendButton.prop("disabled", true);
+
+}
+
+function sendEmail(e){
+  e.preventDefault();
+  console.log(e.target);
+  console.log(gifContainer);
+
+  //Time function to remove the GIF container.
+  setTimeout(function () {
+    gifContainer.addClass('send-animation');
+    email.val('');
+    subject.val('');
+    message.val('');
+    sendButton.prop("disabled", true);
+  }, 3000);
 
 }
 
@@ -102,3 +122,4 @@ function checkValidEmail(field) {
 
 
 }
+
